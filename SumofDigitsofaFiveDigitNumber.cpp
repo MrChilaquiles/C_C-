@@ -15,6 +15,6 @@ int main() {
         printf("\nValue of n: %d", n);
     }
 
-    printf("%d", sum);
+    printf("\n%d", sum);
     return 0;
 }
