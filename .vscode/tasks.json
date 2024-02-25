@@ -2,8 +2,8 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: gcc.exe compilar archivo activo",
-            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "label": "C/C++: g++.exe compilar archivo activo",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
