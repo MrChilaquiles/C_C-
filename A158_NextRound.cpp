@@ -8,7 +8,10 @@ int main() {
     int score[n];
     for (int i = 0; i < n; i++) {
         cin >> score[i];
-        if (score[i] > k || score[i] == 1) {
+    }
+    k = score[(k - 1)];
+    for (int i = 0; i < n; i++){
+        if (score[i] >= k && score[i] > 0) {
             count++;
         }
     }
