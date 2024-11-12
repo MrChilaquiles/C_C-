@@ -1,11 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+bool lucky(string num) {
     bool lucky;
-    string num;
-    cin >> num;
-
     for (int i = 0; i < num.length(); i++) {
         if (num[i] == '4' || num[i] == '7') {
             lucky = true;
@@ -14,9 +11,22 @@ int main() {
             break;
         }
     }
-    
-    if (lucky == true) {
-        cout << "YES";
+
+    return lucky;
+}
+int main() {
+    string num, lenght;
+    cin >> num;
+    lenght = to_string(num.length());
+
+    if (lucky(lenght) == true) {
+        if (lucky(num) == true) {
+            cout << "YES";
+        } else
+        {
+            cout << "NO";
+        }
+        
     } else {
         cout << "NO";
     }
