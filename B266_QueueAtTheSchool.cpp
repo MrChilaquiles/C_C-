@@ -8,15 +8,13 @@ int main() {
     cin >> n >> t;
     cin >> s;
 
-    for (int i = 0; i < n; i++) {
-        if (s[i] == 'B' && s[i + t] != 'B') {
-            s[i] = 'G';
-            if (i + t >= n) {
-                s[n - 1] = 'B';
-            } else {
-                s[i + t] = 'B';
+    for (int i = 0; i < t; i++) {
+        for (int j = 0; j < n; j++) {
+            if (s[j] == 'B' && s[j + 1] == 'G') {
+                s[j] = 'G';
+                s[j + 1] = 'B';
+                j = j + 1;
             }
-            i = i + t;
         }
     }
     
