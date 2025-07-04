@@ -6,6 +6,7 @@ int main() {
     int n, littleX, littleY;
     set<int> levels;
     cin >> n;
+    
 
     cin >> littleX;
     for (int i = 0; i < littleX; i++) {
