@@ -25,6 +25,5 @@ int main() {
             menorPos = i;
         }
     }
-    
-    
+    cout << "Mayor: " << mayor << ", " << mayorPos << " Menor: " << menor << ", " << menorPos;
 }
