@@ -25,5 +25,11 @@ int main() {
             menorPos = i;
         }
     }
-    cout << "Mayor: " << mayor << ", " << mayorPos << " Menor: " << menor << ", " << menorPos;
+
+    if (mayorPos < menorPos) {
+        cout << mayorPos + ((n - 1) - menorPos);
+    } else {
+        cout << (mayorPos - 1) + ((n - 1) - menorPos);
+    }
+    
 }
